@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>SQL servers</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand navbar-dark bg-primary"> <a href="#menu-toggle" id="menu-toggle"
+            class="navbar-brand"><span class="navbar-toggler-icon"></span></a> <button class="navbar-toggler"
+            type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02"
+            aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"> <a class="nav-link" href="#"> <span
+                            class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Link?</a> </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0"> </form>
+        </div>
+    </nav>
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"> <a href="#"> Informacion</a> </li>
+                <li> <a href="index.html">Base de datos</a> </li>
+                <li> <a href="page2.html">SQL server</a> </li>
+                <li> <a href="page3.html">Golang</a> </li>
+            </ul>
+        </div> <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class=" col-md-6 ms-auto container-fluid">
+                <h1>?Qué es SQL Server¿</h1>
+                
+                <br>
+                <p>Dentro del mundo tecnológico, existen muchos sistemas de gestión muy populares, pero uno de los
+                    principales es SQL Server. Diversas aplicaciones de software que trabajan con inteligencia
+                    artificial, inteligencia empresarial y análisis de entornos corporativos trabajan con la empresa en
+                    cuestión. do Si haz realizado algún curso de IA generativa comprenderás más del tema.</p>
+                <p> <strong>La plataforma tiene la capacidad de combinar un conjunto de extensiones de programación
+                        propia de lenguaje estándar por medio de su lenguaje Transact-SQL.</strong> Lo mejor es que SQL
+                    Server tiene una app disponible on premise y en modalidad cloud.</p>
+                <br>
+                <br>
+                <img src="img/clipart1949012.png" alt="info extra" class="img-fluid w-50 rounded">
+
+               
+                <h2>Características de SQL</h2><br>
+                <p>SQL Server cuenta con varias características que pueden describirlo como un gran sistema de gestión.
+                    Estas son:</p>
+                <ol>
+                    <li><strong>Integridad de los datos</strong>
+                        <p>SQL es uno de los sistemas más populares porque trabaja en función de cuidar la integridad de
+                            la arquitectura de datos de sus clientes, garantizando que sean válidos, correctos y
+                            completos. Es una forma segura de evitar corrupciones por fallos en el sistema.</p>
+                    </li>
+                    <li><strong>Lenguaje estandarizado</strong>
+                        <p>Con SQL es posible realizar implementaciones del mismo en varios sistemas, usando el mismo
+                            código para todos. Es decir, aunque el lenguaje SQL de Oracle y el de Microsoft SQL Server
+                            son diferentes, comparten la misma estructura para crear o manipular información.</p>
+                    </li>
+                    <li><strong>Flexibilidad</strong>
+                        <p>Contar con un lenguaje versátil a la hora de encontrar soluciones y definir formas de datos
+                            es fundamental, esto puedes encontrarlo con SQL.</p>
+                    </li>
+                    <li><strong>Sencillez y claridad</strong>
+                        <p>Este sistema es claro, fácil de comprender y unificado. Aunque la estructura es en inglés
+                            elevado, todos pueden tener acceso y lograr el entendimiento. </p>
+                    </li>
+                    <li><strong>Cifrado de datos y cumplimiento normativo</strong>
+                        <p>pSQL cuenta con un sistema de protección, supervisión y clasificación de datos que lo
+                            convierten en uno de los softwares más seguros según el National Institute of Standards and
+                            Technology.</p>
+                    </li>
+                </ol>
+            </div>
+
+        </div> <!-- /#page-content-wrapper -->
+    </div> <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> <!-- Menu Toggle Script -->
+    <script>
+        $(function () {
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+
+            $(window).resize(function (e) {
+                if ($(window).width() <= 768) {
+                    $("#wrapper").removeClass("toggled");
+                } else {
+                    $("#wrapper").addClass("toggled");
+                }
+            });
+        });
+
+    </script>
+
+</html>
+</body>
+
+</html>

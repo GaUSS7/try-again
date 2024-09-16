@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Golang</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark bg-primary"> <a href="#menu-toggle" id="menu-toggle"
+            class="navbar-brand"><span class="navbar-toggler-icon"></span></a> <button class="navbar-toggler"
+            type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02"
+            aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"> <a class="nav-link" href="#"> <span
+                            class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Link?</a> </li>
+            </ul>
+            <form class="form-inline my-2 my-md-0"> </form>
+        </div>
+    </nav>
+    <div id="wrapper" class="toggled">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"> <a href="#"> Informacion</a> </li>
+                <li> <a href="index.html">Base de datos</a> </li>
+                <li> <a href="page2.html">SQL server</a> </li>
+                <li> <a href="page3.html">Golang</a> </li>
+            </ul>
+        </div> <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class=" col-md-6 ms-auto container-fluid">
+                <h1>?Qué es Go y para qué sirve¿</h1>
+                <br>
+                <p>Go, también conocido como Golang, es un lenguaje de programación desarrollado por Google. Se
+                    caracteriza por su simplicidad y eficiencia, y se utiliza para desarrollar una amplia variedad de
+                    aplicaciones, desde programas de línea de comandos hasta sistemas distribuidos y aplicaciones web de
+                    alta escala.</p>
+                <p>Al ser un lenguaje eficiente, Go es adecuado para construir aplicaciones que necesitan manejar un
+                    alto volumen de solicitudes concurrentes. Además, su diseño hace hincapié en la seguridad y
+                    prevención de errores.</p>
+                <p>Go es un lenguaje de programación versátil que permite crear aplicaciones de manera eficiente y
+                    segura, abarcando desde proyectos pequeños hasta sistemas complejos.</p>
+                <br>
+                <img src="img/golanlogo.png" alt="info extra" class="img-fluid w-50 rounded">
+
+
+                
+                <h2>Características de Go</h2><br>
+                <ol>
+                    <li><strong>Simplicidad</strong>. Este lenguaje tiene una sintaxis clara, limpia y organizada.</li>
+                    <li><strong>Facilidad</strong> de uso. Go está pensado para facilitar la vida al máximo a los
+                        desarrolladores.</li>
+                    <li> <strong>Compatibilidad</strong>. Al igual que otros muchos lenguajes, es compatible con
+                        sistemas Windows, Mac OS X, Linux y FreeBSD.</li>
+                    <li> <strong>Código abierto</strong>. Permite que usuarios externos desarrollen nuevos programas y
+                        librerías utilizándolo.</li>
+                    <li> <strong>Lenguaje compilado</strong>. Su código fuente se compila para generar código máquina y,
+                        así, ejecutar el programa.</li>
+                </ol>
+                <img src="img/imggoo.png" alt="info extra" class="img-fluid w-50 rounded">
+            </div>
+
+        </div> <!-- /#page-content-wrapper -->
+    </div> <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> <!-- Menu Toggle Script -->
+    <script>
+        $(function () {
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+
+            $(window).resize(function (e) {
+                if ($(window).width() <= 768) {
+                    $("#wrapper").removeClass("toggled");
+                } else {
+                    $("#wrapper").addClass("toggled");
+                }
+            });
+        });
+
+    </script>
+
+</html>
+</body>
+
+</html>
